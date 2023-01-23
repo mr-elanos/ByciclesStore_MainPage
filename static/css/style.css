@@ -326,9 +326,11 @@ body {
     opacity: 0;
     transform: translateX(100%);
     transition: all 0.3s linear;
+    z-index: 3;
   }
   .header__burger-menu.active {
     opacity: 1;
+    z-index: 3;
     transform: translateX(0);
   }
   .header__burger-btn {
@@ -369,7 +371,7 @@ body {
   }
   .header__burger-btn.open {
     transform: rotate(-90deg);
-    z-index: 3;
+    z-index: 5;
     position: fixed;
     right: 10px;
   }
