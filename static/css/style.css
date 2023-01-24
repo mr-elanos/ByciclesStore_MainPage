@@ -642,6 +642,7 @@ body {
   height: 1.6875rem;
 }
 .swiper__title {
+  font-size: calc(14px + 2 * ((100vw - 320px) / 960));
   margin-bottom: 1.6875rem;
   line-height: 1.2;
   font-weight: 700;
@@ -654,7 +655,7 @@ body {
 }
 .swiper__text {
   margin-bottom: 1.25rem;
-  font-size: 1.5rem;
+  font-size: calc(16px + 8 * ((100vw - 320px) / 960));
   line-height: 1.5;
   font-style: italic;
   text-align: center;

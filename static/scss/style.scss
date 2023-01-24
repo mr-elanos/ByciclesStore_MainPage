@@ -508,6 +508,7 @@ body{
         }
     }
     &__title {
+        @include adaptiv-font(16, 14);
         margin-bottom: -rem(27);
         line-height: 1.2;
         font-weight: 700;
@@ -520,7 +521,7 @@ body{
     }
     &__text {
         margin-bottom: -rem(20);
-        font-size: -rem(24);
+        @include adaptiv-font(24, 16);
         line-height: 1.5;
         font-style: italic;
         text-align: center;
