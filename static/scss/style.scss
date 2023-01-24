@@ -444,13 +444,13 @@ body{
         } 
     }   
     &__logo{
-        margin: 58px 0px 25px;
+        margin: -rem(58) 0px -rem(25);
         & img{
             width: -rem(25);
         }      
     }
     &__title{
-        margin: 0px 15px 26px;
+        margin: 0px -rem(15) -rem(26);
         text-align: center;   
     }
     &__img img{
@@ -463,17 +463,16 @@ body{
         background-size: cover;
         background-image: url('../img/block3_3.png'); 
     }
-    @media (max-width: 760px){
-        .retro__left, .retro__right{
-            flex: 1 1 100%; 
-            min-height: 400px;
-        }
-        .retro__img img{
-            display: none;
-        }
+}
+@media (max-width: 760px){
+    .retro__left, .retro__right{
+        flex: 1 1 100%; 
+        min-height: 400px;
+    }
+    .retro__img img{
+        display: none;
     }
 }
-
 
 .swiper{
     background-color: #f7f7f7;

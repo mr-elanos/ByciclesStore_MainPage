@@ -576,13 +576,13 @@ body {
   height: 4.1875rem;
 }
 .retro__logo {
-  margin: 58px 0px 25px;
+  margin: 3.625rem 0px 1.5625rem;
 }
 .retro__logo img {
   width: 1.5625rem;
 }
 .retro__title {
-  margin: 0px 15px 26px;
+  margin: 0px 0.9375rem 1.625rem;
   text-align: center;
 }
 .retro__img img {
@@ -596,16 +596,16 @@ body {
   background-size: cover;
   background-image: url("../img/block3_3.png");
 }
+
 @media (max-width: 760px) {
-  .retro .retro__left, .retro .retro__right {
+  .retro__left, .retro__right {
     flex: 1 1 100%;
     min-height: 400px;
   }
-  .retro .retro__img img {
+  .retro__img img {
     display: none;
   }
 }
-
 .swiper {
   background-color: #f7f7f7;
 }
