@@ -100,13 +100,18 @@ body{
         width: 60%;
     } 
 }
-
 /*Полноэкранная ширина, кроме grid*/
 .full-container{
     display: flex;
     min-height: -rem(600);
     flex-wrap: wrap;
 }
+@media (max-width: 767px){
+    .container, .full-container{
+        min-height: auto;
+    }
+}
+
 
 /*Для колонок с контентом vintage, boriosa, retro*/
 .columns-content{
@@ -308,21 +313,29 @@ body{
         flex-direction: column;
     }
     &__logo {
-        margin-top: 110px;
+        margin-top: -rem(110);
         & img{
-            min-width: 52px;
-            min-height: 43px;
             width: -rem(40);
             height: -rem(31);
         }
     }
     &__title {
-        margin: 35px 0px;
+        margin: -rem(35) 0px;
     }
     &__text {
-        margin-bottom: 140px;
-        font-size: -rem(18);
+        margin-bottom: -rem(140);
+        @include adaptiv-font(17, 13);
         line-height: 1.5;
+    }
+}
+@media (max-width: 767px){
+    .generation {
+        &__logo {
+            margin-top: 70px;
+        }
+        &__text {
+            margin-bottom: 70px;
+        }
     }
 }
 
@@ -365,6 +378,7 @@ body{
         }
     }
 }
+
 
 /*Блок boriosa*/
 .boriosa{
