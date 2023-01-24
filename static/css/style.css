@@ -530,36 +530,37 @@ body {
   height: 9.5rem;
 }
 .boriosa__logo {
-  margin: 61px 0px 29px;
+  margin: 3.8125rem 0px 1.8125rem;
 }
 .boriosa__logo img {
   width: 1.875rem;
+  height: 1.875rem;
 }
 .boriosa__title {
-  margin: 0px 15px 25px;
+  margin: 0px 0.9375rem 1.5625rem;
 }
 .boriosa__img img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 @media (max-width: 760px) {
-  .boriosa .boriosa__right {
+  .boriosa__right {
     flex: 1 1 100%;
     min-height: 400px;
   }
-  .boriosa .boriosa__img img {
+  .boriosa__img img {
     display: none;
   }
-  .boriosa .full-container {
+  .full-container {
     display: flex;
     flex-direction: column-reverse;
   }
-  .boriosa .boriosa__img img {
+  .boriosa__img img {
     display: none;
   }
 }
-
 /*Блок retro*/
 .retro__left {
   flex: 1 1 35%;
