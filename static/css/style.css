@@ -247,6 +247,11 @@ body {
   flex-wrap: wrap;
 }
 
+@media (max-width: 767px) {
+  .container, .full-container {
+    min-height: auto;
+  }
+}
 /*Для колонок с контентом vintage, boriosa, retro*/
 .columns-content {
   flex: 1 1 30%;
@@ -447,23 +452,29 @@ body {
   flex-direction: column;
 }
 .generation__logo {
-  margin-top: 110px;
+  margin-top: 6.875rem;
 }
 .generation__logo img {
-  min-width: 52px;
-  min-height: 43px;
   width: 2.5rem;
   height: 1.9375rem;
 }
 .generation__title {
-  margin: 35px 0px;
+  margin: 2.1875rem 0px;
 }
 .generation__text {
-  margin-bottom: 140px;
-  font-size: 1.125rem;
+  margin-bottom: 8.75rem;
+  font-size: calc(13px + 4 * ((100vw - 320px) / 960));
   line-height: 1.5;
 }
 
+@media (max-width: 767px) {
+  .generation__logo {
+    margin-top: 70px;
+  }
+  .generation__text {
+    margin-bottom: 70px;
+  }
+}
 /*Блок vintage*/
 .vintage__left {
   flex: 1 1 70%;
