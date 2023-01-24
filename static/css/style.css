@@ -776,43 +776,43 @@ body {
 .discover__btn a {
   display: inline-block;
   width: 100%;
-  border: 2px solid rgba(255, 255, 255, 0.49);
+  border: 0.125rem solid rgba(255, 255, 255, 0.49);
   text-align: center;
-  padding: 20px 59px;
+  padding: 1.25rem 3.6875rem;
   font-size: 0.875rem;
   line-height: 1.2;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #ffffff;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   transition: all 0.3s ease-in;
   margin: 2.1875rem 0px;
 }
 .discover__btn a:hover {
   font-size: 0.8125rem;
   color: #b2e8f1;
-  border: 2px solid #b2e8f1;
-  box-shadow: 3px 3px 4px #b2e8f1 inset, -3px -3px 4px #b2e8f1 inset;
+  border: 0.125rem solid #b2e8f1;
+  box-shadow: 0.1875rem 0.1875rem 0.25rem #b2e8f1 inset, -3px -3px 4px #b2e8f1 inset;
 }
 
 /*Блок email*/
 .email {
   width: 100%;
-  min-height: 469px;
+  min-height: 29.3125rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .email__img {
-  margin: 109px 0px 2.4375rem;
+  margin: 6.8125rem 0px 2.4375rem;
 }
 .email__img img {
   width: 5.875rem;
   height: 5.3125rem;
 }
 .email__title {
-  font-size: 1.5rem;
+  font-size: calc(18px + 6 * ((100vw - 320px) / 960));
   line-height: 34px;
   font-weight: 400;
   font-style: italic;
@@ -825,18 +825,13 @@ body {
 .email__form .email__input {
   width: 25rem;
   height: 4.3125rem;
-  margin: 0px 15px;
-  border: 1px solid #d3d7d9;
+  margin: 0px 0.9375rem;
+  border: 0.0625rem solid #d3d7d9;
   background-color: #ffffff;
-}
-@media (max-width: 550px) {
-  .email__form .email__input {
-    width: 12.5rem;
-  }
 }
 .email__form input::-moz-placeholder {
   display: inline-block;
-  font-size: 1.25rem;
+  font-size: calc(14px + 6 * ((100vw - 320px) / 960));
   line-height: 24px;
   font-weight: 400;
   font-style: italic;
@@ -844,7 +839,7 @@ body {
 }
 .email__form input:-ms-input-placeholder {
   display: inline-block;
-  font-size: 1.25rem;
+  font-size: calc(14px + 6 * ((100vw - 320px) / 960));
   line-height: 24px;
   font-weight: 400;
   font-style: italic;
@@ -852,39 +847,42 @@ body {
 }
 .email__form input::placeholder {
   display: inline-block;
-  font-size: 1.25rem;
+  font-size: calc(14px + 6 * ((100vw - 320px) / 960));
   line-height: 24px;
   font-weight: 400;
   font-style: italic;
   color: #929292;
 }
 .email__form input[type=email] {
-  padding-left: 28px;
+  padding-left: 1.75rem;
   font-size: 1.25rem;
-  border-radius: 2px;
+  border-radius: 0.125rem;
 }
 .email__form .email__btn {
   width: 7.875rem;
   height: 4.3125rem;
   margin-bottom: 111px;
   background-color: #64c29e;
-  font-size: 1.5rem;
+  font-size: calc(18px + 6 * ((100vw - 320px) / 960));
   line-height: 24px;
   font-weight: 300;
   color: #ffffff;
-  border-radius: 2px;
+  border-radius: 0.125rem;
   transition: all 0.3s ease-out;
 }
 .email__form .email__btn:hover {
   background-color: #a5d4c2;
-  border-radius: 10px;
-}
-@media (max-width: 550px) {
-  .email__form .email__btn {
-    width: 6.25rem;
-  }
+  border-radius: 0.625rem;
 }
 
+@media (max-width: 767px) {
+  .email__form .email__btn {
+    width: 3.75rem;
+  }
+  .email__form .email__input {
+    width: 12.5rem;
+  }
+}
 /*Блок footer*/
 .footer {
   background-color: #f7f7f7;
