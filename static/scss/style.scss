@@ -66,7 +66,7 @@ body{
     font-family: 'Lato', sans-serif;
 }
 .title{
-    font-size: -rem(18);
+    @include adaptiv-font(18, 14);
     line-height: 1.2;
     font-weight: 700;
     text-transform: uppercase;
@@ -74,18 +74,18 @@ body{
     color: #353738;
 }
 .text{
-    font-size: -rem(16);
+    @include adaptiv-font(16, 12);
     line-height: 1.2;
     font-weight: 400;
     color: #848789;
 }
 .text-style{   
-    margin: 0px 68px 40px; 
+    margin: 0px -rem(68) -rem(40); 
     text-align: justify;
 } 
 @media (max-width: 1500px){
     .text-style{
-        margin: 0px 15px 40px; 
+        margin: 0px -rem(15) -rem(40); 
     }
 }
 
@@ -104,7 +104,7 @@ body{
 /*Полноэкранная ширина, кроме grid*/
 .full-container{
     display: flex;
-    min-height: 600px;
+    min-height: -rem(600);
     flex-wrap: wrap;
 }
 
@@ -123,10 +123,10 @@ body{
     align-items: center;
     &::after{
         content: '';
-        width: 100px;
-        height:1px;
+        width: -rem(100);
+        height: -rem(1);
         background-color: #d7d7d7; 
-        margin-bottom: 53px;      
+        margin-bottom: -rem(53);      
     }
 }
 
