@@ -145,7 +145,7 @@ body{
 .header {
     width: 100%;
     min-height: 100%;
-    background-image: url('../img/header.png');
+    background-image: url('../img/header.webp');
     background-position:center;
     background-size:cover;
     &__burger, &__burger-menu{
@@ -348,7 +348,7 @@ body{
         justify-content: center;
         background-position: center; 
         background-size: cover;
-        background-image: url('../img/block1_1.png');
+        background-image: url('../img/block1_1.webp');
         & img{
             width: -rem(113);
             height: -rem(118);
@@ -390,7 +390,7 @@ body{
         justify-content: center;
         background-position: center; 
         background-size: cover;
-        background-image: url('../img/block2_2.png');
+        background-image: url('../img/block2_2.webp');
         & img{
             width: -rem(177);
             height: -rem(152);
@@ -437,7 +437,7 @@ body{
         justify-content: center;
         background-position: center; 
         background-size: cover;
-        background-image: url('../img/block3_1.png');
+        background-image: url('../img/block3_1.webp');
         & img{
             width: -rem(208);
             height: -rem(67);
@@ -461,7 +461,7 @@ body{
         flex: 1 1 35%;  
         background-position: center; 
         background-size: cover;
-        background-image: url('../img/block3_3.png'); 
+        background-image: url('../img/block3_3.webp'); 
     }
 }
 @media (max-width: 760px){
@@ -553,35 +553,35 @@ body{
     }
     &__1 {
         grid-area: a;
-        background-image: url('../img/down_1.png');
+        background-image: url('../img/down_1.webp');
     }
     &__2 {
         grid-area: b;
-        background-image: url('../img/down_2.png');
+        background-image: url('../img/down_2.webp');
     }
     &__3 {
         grid-area: c;
-        background-image: url('../img/down_3.png');
+        background-image: url('../img/down_3.webp');
     }
     &__4 {
         grid-area: d;
-        background-image: url('../img/down_4.png');
+        background-image: url('../img/down_4.webp');
     }
     &__5 {
         grid-area: e;
-        background-image: url('../img/down_5.png');
+        background-image: url('../img/down_5.webp');
     }
     &__6 {
         grid-area: f;
-        background-image: url('../img/down_6.png');
+        background-image: url('../img/down_6.webp');
     }
     &__7 {
         grid-area: g;
-        background-image: url('../img/down_7.png');
+        background-image: url('../img/down_7.webp');
     }
     &__8 {
         grid-area: h;
-        background-image: url('../img/down_8.png');
+        background-image: url('../img/down_8.webp');
     }
 }
 .show-grid {
