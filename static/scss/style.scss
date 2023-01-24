@@ -193,7 +193,7 @@ body{
                 }
             }
             &-btn{
-                width: 35px;
+                width: 30px;
                 height: 30px;
                 margin: 10px 10px;
                 position: relative;
@@ -208,21 +208,21 @@ body{
                 }
                 & span:nth-child(1){
                     width: 100%;
-                    height:  4px;
+                    height:  3px;
                     display: block;
                     top: 0px;
                     left: 0px;
                 }
                 & span:nth-child(2){
                     width: 100%;
-                    height:  4px;
+                    height:  3px;
                     display: block;
                     top: 13px;
                     left: 0px;
                 }
                 & span:nth-child(3){
                     width: 100%;
-                    height:  4px;
+                    height:  3px;
                     display: block;
                     bottom: 0px;
                     left: 0px;
@@ -282,6 +282,10 @@ body{
                 font-weight: 500;
                 color: #27b881;
                 text-transform: uppercase;
+                transition: all 0.3s linear;
+                &:hover{
+                    color: #ffffff;
+                }
             }
             &-social{
                 display: flex;
