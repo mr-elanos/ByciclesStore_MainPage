@@ -22,7 +22,6 @@ $maxWidth: 1280;
     75%{background-color: rgba(100,194,158,0.7);}
     100%{background-color: rgba(100,194,158,0.8);}
 }
-
 @keyframes logo{
     0%{margin-right: 70%;}
     25%{margin-right: 50%;}
@@ -30,7 +29,6 @@ $maxWidth: 1280;
     75%{margin-right: 10%;}
     100%{margin-right: 0%;}
 }
-
 @keyframes title{
     0%{color: #ffffff18;}
     25%{color: #ffffff4b;}
@@ -111,7 +109,6 @@ body{
         min-height: auto;
     }
 }
-
 
 /*Для колонок с контентом vintage, boriosa, retro*/
 .columns-content{
@@ -341,6 +338,11 @@ body{
 
 /*Блок vintage*/
 .vintage {
+    &__container{
+        display: flex;
+        min-height: -rem(600);
+        flex-wrap: wrap;
+    }
     &__left {      
         flex: 1 1 70%;  
         display: flex;
@@ -370,7 +372,7 @@ body{
         object-fit: cover;
     }
 }
-@media (max-width: 760px){
+@media (max-width: 767px){
     .vintage__left{
         flex: 1 1 100%; 
         min-height: 400px;
@@ -378,8 +380,12 @@ body{
     .vintage__img img{
         display: none;
     }
+    .vintage__container{
+        display: flex;
+        min-height: auto;
+        flex-wrap: wrap;
+    }
 }
-
 
 /*Блок boriosa*/
 .boriosa{
@@ -474,6 +480,7 @@ body{
     }
 }
 
+/*Блок swiper*/
 .swiper{
     background-color: #f7f7f7;
     &:hover{
@@ -735,6 +742,7 @@ body{
         }
     }
 }
+
 /*Блок footer*/
 .footer {
     background-color: #f7f7f7;

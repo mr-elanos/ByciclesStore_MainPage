@@ -476,6 +476,11 @@ body {
   }
 }
 /*Блок vintage*/
+.vintage__container {
+  display: flex;
+  min-height: 37.5rem;
+  flex-wrap: wrap;
+}
 .vintage__left {
   flex: 1 1 70%;
   display: flex;
@@ -506,13 +511,18 @@ body {
      object-fit: cover;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 767px) {
   .vintage__left {
     flex: 1 1 100%;
     min-height: 400px;
   }
   .vintage__img img {
     display: none;
+  }
+  .vintage__container {
+    display: flex;
+    min-height: auto;
+    flex-wrap: wrap;
   }
 }
 /*Блок boriosa*/
@@ -606,6 +616,7 @@ body {
     display: none;
   }
 }
+/*Блок swiper*/
 .swiper {
   background-color: #f7f7f7;
 }
